@@ -1,0 +1,35 @@
+/* Reset CSS */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+:root {}
+
+/* mobile stage */
+.container {
+  display: flex;
+  background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+  border-radius: 0px 0px 32px 32px;
+  height: 356px;
+  width: 375px;
+
+}
