@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Poiret+One&family=Roboto+Slab&display=swap');
 /* Reset CSS */
 html {
   box-sizing: border-box;
@@ -6,6 +7,7 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+  font-family: Hanken Grotesk;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -22,14 +24,60 @@ img {
   max-width: 100%;
   height: auto;
 }
-:root {}
+:root {
+  --Light-Blue: #CAC9FF;
+  --White: #FFF;
+}
 
 /* mobile stage */
 .container {
   display: flex;
+  flex-direction: column;
   background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
   border-radius: 0px 0px 32px 32px;
   height: 356px;
   width: 375px;
-
+  text-align: center;
+}
+.dashboard__top--label {
+  color: var(--Light-Blue);
+  margin-top: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+}
+.dashboard__top--circle { 
+  background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%);
+  border-radius: 50% 50%;
+  width: 140px;
+  height: 140px;
+  margin: 24px auto;
+}
+.dashboard__top--average {
+  color: var(--White);
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 72px;
+  margin: 25px 39px 0px;
+}
+.dashboard__top--total {
+  color: var(--Light-Blue);
+}
+.dashboard__top--rate {
+  color: var(--White);
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 8px
+}
+.content {
+  text-align: center;
+}
+.dashboard__top--message {
+  display: blocK;
+  color: var(--Light-Blue);
+  padding: 0;
+  width: 200px;
+  
 }
