@@ -27,6 +27,7 @@ img {
 :root {
   --Light-Blue: #CAC9FF;
   --White: #FFF;
+  --Dark-Navy: #303B59;
 }
 
 /* mobile stage */
@@ -73,4 +74,13 @@ img {
 .dashboard__top--message {
   color: var(--Light-Blue);
   font-weight:500;
+}
+.dashboard__bottom {
+  margin: 24px 30px 30px;
+}
+.dashboard__bottom--label {
+  font-size: 18px;
+  font-weight: 700;
+  color:  var(--Dark-Navy);
+
 }
