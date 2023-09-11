@@ -52,7 +52,7 @@ img {
   border-radius: 50% 50%;
   width: 140px;
   height: 140px;
-  margin: 24px auto;
+  margin: 24px auto 24px;
 }
 .dashboard__top--average {
   color: var(--White);
@@ -68,16 +68,9 @@ img {
   color: var(--White);
   font-size: 24px;
   font-weight: 700;
-  margin-top: 24px;
   margin-bottom: 8px
 }
-.content {
-  text-align: center;
-}
 .dashboard__top--message {
-  display: blocK;
   color: var(--Light-Blue);
-  padding: 0;
-  width: 200px;
-  
+  font-weight:500;
 }
