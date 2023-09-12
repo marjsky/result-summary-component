@@ -28,6 +28,14 @@ img {
   --Light-Blue: #CAC9FF;
   --White: #FFF;
   --Dark-Navy: #303B59;
+  --red-95-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55;
+  --red: #F55;
+  --yellow-95-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E;
+  --yelow: #FFB21E;
+  --green-95-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F;
+  --green: #00BB8F;
+  --blue-95-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6;
+  --blue: #1125D6;
 }
 
 /* mobile stage */
@@ -83,4 +91,59 @@ img {
   font-weight: 700;
   color:  var(--Dark-Navy);
 
+}
+.dashboard__bottom--list {
+  margin-top: 24px;
+}
+.dashboard__bottom--container {
+  display: flex;
+  margin: 0px 0px 16px;
+  border-radius: 12px;
+  height: 56px;
+  align-items: center;
+}
+.label--reaction {
+  color: var(--red);
+}
+.reaction-highlight {
+  background: var(--red-95-white);
+}
+.memory-highlight {
+  background: var(--yellow-95-white);
+}
+.verbal-highlight {
+  background: var(--green-95-white);
+}
+.visual-highlight {
+  background: var(--blue-95-white);
+}
+
+.label--memory {
+  color: var(--yellow);
+}
+.label--veral {
+  color: var(--green);
+}
+.label--visual {
+  color: var(--blue);
+}
+.icons {
+  margin: 0px 12px 0px 16px;
+} 
+.label--number {
+ margin-left: auto;
+ margin-right: 16px; 
+}
+span {
+  opacity: 0.5;
+}
+.dashboard__buttom--button {
+  background: var(--Dark-Navy);
+  color: var(--White);
+  width: 100%;
+  height: 56px;
+  border-radius: 128px;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 700;
 }
