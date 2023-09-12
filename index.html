@@ -21,42 +21,46 @@
     </style>
   </head>
   <body>
-    <div class="dashboard__top container">
-      <h1 class="dashboard__top--label">Your Result</h1>
-      <div class="dashboard__top--circle">
-        <p class="dashboard__top--average">76</p>
-        <p class="dashboard__top--total">of 100</p>
+    <div class="dashboard">
+      <div class="wrapper">
+        <div class="dashboard__top container">
+          <h1 class="dashboard__top--label">Your Result</h1>
+          <div class="dashboard__top--circle">
+            <p class="dashboard__top--average">76</p>
+            <p class="dashboard__top--total">of 100</p>
+          </div>
+          <h1 class="dashboard__top--rate">Great</h1>
+          <p class="dashboard__top--message">Your scored higher than 65% of </br> the people who
+          have taken </br> these tests.</p>
+        </div>
+    
+        <div class="dashboard__bottom">
+          <h1 class="dashboard__bottom--label">Summary</h1>
+          <div class="dashboard__bottom--list">
+            <div class="dashboard__bottom--container reaction-highlight">
+              <img src="./assets/images/icon-reaction.svg" alt="icon" class="icons">
+              <p class="label--reaction">Reaction</p>
+              <p class="label--number">80 <span>/ 100</span></p>
+            </div>
+            <div class="dashboard__bottom--container memory-highlight">
+              <img src="./assets/images/icon-memory.svg" alt="icon" class="icons">
+              <p class="label--memory">Memory</p>
+              <p class="label--number">92 <span>/ 100</span></p>
+            </div>
+            <div class="dashboard__bottom--container verbal-highlight">
+              <img src="./assets/images/icon-verbal.svg" alt="icon" class="icons">
+              <p class="label--verbal">Verbal</p>
+              <p class="label--number">61 <span>/ 100</span></p>
+            </div>
+            <div class="dashboard__bottom--container visual-highlight">
+              <img src="./assets/images/icon-visual.svg" alt="icon" class="icons">
+              <p class="label--visual">Visual</p>
+              <p class="label--number">73 <span>/ 100</span></p>
+            </div>
+          </div>
+          <button class="dashboard__buttom--button">Continue</button>
+        </div>
       </div>
-      <h1 class="dashboard__top--rate">Great</h1>
-      <p class="dashboard__top--message">Your scored higher than 65% of the </br> people who
-      have taken these tests.</p>
-    </div>
-
-    <div class="dashboard__bottom">
-      <h1 class="dashboard__bottom--label">Summary</h1>
-      <div class="dashboard__bottom--list">
-        <div class="dashboard__bottom--container reaction-highlight">
-          <img src="./assets/images/icon-reaction.svg" alt="icon" class="icons">
-          <p class="label--reaction">Reaction</p>
-          <p class="label--number">80 <span>/ 100</span></p>
-        </div>
-        <div class="dashboard__bottom--container memory-highlight">
-          <img src="./assets/images/icon-memory.svg" alt="icon" class="icons">
-          <p class="label--memory">Memory</p>
-          <p class="label--number">92 <span>/ 100</span></p>
-        </div>
-        <div class="dashboard__bottom--container verbal-highlight">
-          <img src="./assets/images/icon-verbal.svg" alt="icon" class="icons">
-          <p class="label--verbal">Verbal</p>
-          <p class="label--number">61 <span>/ 100</span></p>
-        </div>
-        <div class="dashboard__bottom--container visual-highlight">
-          <img src="./assets/images/icon-visual.svg" alt="icon" class="icons">
-          <p class="label--visual">Visual</p>
-          <p class="label--number">73 <span>/ 100</span></p>
-        </div>
-      </div>
-      <button class="dashboard__buttom--button">Continue</button>
     </div>
 
     <div id="json-data"></div>

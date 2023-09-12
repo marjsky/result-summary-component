@@ -1,22 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Poiret+One&family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Poiret+One&family=Roboto+Slab&display=swap");
+
+:root {
+  --Very-Light_blue: #ecf2ff;
+  --Light-Blue: #cac9ff;
+  --White: #fff;
+  --Dark-Navy: #303b59;
+  --red-95-white: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #f55;
+  --red: #f55;
+  --yellow-95-white: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #ffb21e;
+  --yellow: #ffb21e;
+  --green-95-white: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #00bb8f;
+  --green: #00bb8f;
+  --blue-95-white: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.95) 100%
+    ),
+    #1125d6;
+  --blue: #1125d6;
+}
+
 /* Reset CSS */
 html {
   box-sizing: border-box;
   font-size: 16px;
+  background: var(--Very-Light_blue);
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   font-family: Hanken Grotesk;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -24,25 +73,15 @@ img {
   max-width: 100%;
   height: auto;
 }
-:root {
-  --Light-Blue: #CAC9FF;
-  --White: #FFF;
-  --Dark-Navy: #303B59;
-  --red-95-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #F55;
-  --red: #F55;
-  --yellow-95-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #FFB21E;
-  --yelow: #FFB21E;
-  --green-95-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #00BB8F;
-  --green: #00BB8F;
-  --blue-95-white: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%), #1125D6;
-  --blue: #1125D6;
-}
 
 /* mobile stage */
+.dashboard {
+  width: 375px;
+}
 .container {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%);
+  background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
   border-radius: 0px 0px 32px 32px;
   height: 356px;
   width: 375px;
@@ -56,8 +95,13 @@ img {
   font-style: normal;
   line-height: normal;
 }
-.dashboard__top--circle { 
-  background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0.00) 100%, rgba(37, 33, 201, 0.00) 100%);
+.dashboard__top--circle {
+  background: linear-gradient(
+    180deg,
+    #4d21c9 0%,
+    rgba(37, 33, 201, 0) 100%,
+    rgba(37, 33, 201, 0) 100%
+  );
   border-radius: 50% 50%;
   width: 140px;
   height: 140px;
@@ -77,11 +121,11 @@ img {
   color: var(--White);
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 8px
+  margin-bottom: 8px;
 }
 .dashboard__top--message {
   color: var(--Light-Blue);
-  font-weight:500;
+  font-weight: 500;
 }
 .dashboard__bottom {
   margin: 24px 30px 30px;
@@ -89,8 +133,7 @@ img {
 .dashboard__bottom--label {
   font-size: 18px;
   font-weight: 700;
-  color:  var(--Dark-Navy);
-
+  color: var(--Dark-Navy);
 }
 .dashboard__bottom--list {
   margin-top: 24px;
@@ -121,7 +164,7 @@ img {
 .label--memory {
   color: var(--yellow);
 }
-.label--veral {
+.label--verbal {
   color: var(--green);
 }
 .label--visual {
@@ -129,10 +172,10 @@ img {
 }
 .icons {
   margin: 0px 12px 0px 16px;
-} 
+}
 .label--number {
- margin-left: auto;
- margin-right: 16px; 
+  margin-left: auto;
+  margin-right: 16px;
 }
 span {
   opacity: 0.5;
@@ -146,4 +189,89 @@ span {
   margin-top: 8px;
   font-size: 18px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 376px) {
+  .dashboard {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* Optional: Set a fixed height if needed */
+    height: 100vh; /* 100% of the viewport height */
+    margin: auto;
+    width: 736px;
+  }
+  .wrapper {
+    display: flex;
+    width: 736px;
+    height: 512px;
+    background: var(--White);
+    border-radius: 32px;
+  }
+  .container {
+    width: 368px;
+    height: 512px;
+    border-radius: 32px;
+  }
+  .dashboard__top--label {
+    margin-top: 38px;
+    font-size: 24px;
+  }
+  .dashboard__top--circle {
+    margin-top: 38px;
+    margin-bottom: 28px;
+    height: 200px;
+    width: 200px;
+  }
+  .dashboard__top--average {
+    margin-top: 55px;
+    font-size: 72px;
+  }
+  .dashboard__top--total {
+    font-size: 18px;
+  }
+  .dashboard__top--rate {
+    margin-bottom: 14px;
+    font-size: 32px;
+  }
+  .dashboard__top--message {
+    font-size: 18px;
+  }
+  .dashboard__bottom {
+    width: 288px;
+    margin: 38px 40px 0px;
+  }
+  .dashboard__bottom--list {
+    margin-top: 28px;
+  }
+
+  .dashboard__bottom--label {
+    font-size: 24px;
+  }
+  .label--reaction {
+    font-size: 18px;
+  }
+  .label--memory {
+    font-size: 18px;
+  }
+  .label--verbal {
+    font-size: 18px;
+  }
+  .label--visual {
+    font-size: 18px;
+  }
+  span {
+    font-size: 18px;
+  }
+  .dashboard__buttom--button {
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  .dashboard__buttom--button:hover {
+    background: var(
+      --Gradient-1,
+      linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+    );
+    border: none;
+  }
 }
